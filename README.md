@@ -1,2 +1,2 @@
-# RT1_assingment1
+# RT1_assignment1
 Python Robot Simulator
