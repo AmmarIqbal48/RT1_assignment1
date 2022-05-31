@@ -6,9 +6,10 @@ Python Robotics Simulator
 This is a simple, portable robot simulator developed by [Student Robotics](https://studentrobotics.org).
 Some of the arenas and the assignment has been modified for the Research Track 1 course. In this simulator the robot will spawn inside of an arena composed of squared tokens of two different colors **Silver** token and **Golden** tocken.
 
-1)**Golden tokens:** walls of the simulator are made by Golden token.
+1)**Golden tokens:** Walls of the simulator are made by Golden token.
 
 2)**Silver tokens:** Silver tokens are randomly placed in the simulator which robot has to collect.
+
 
 Installing and running
 ----------------------
