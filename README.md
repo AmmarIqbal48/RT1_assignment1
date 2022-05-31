@@ -4,7 +4,10 @@ Python Robotics Simulator
 ================================
 
 This is a simple, portable robot simulator developed by [Student Robotics](https://studentrobotics.org).
-Some of the arenas and the exercises have been modified for the Research Track I course
+Some of the arenas and the assignment has been modified for the Research Track 1 course. In this simulator the robot will spawn inside of an arena composed of squared tokens of two different colors **Silver** token and **Golden** tocken.
+
+1)**Golden tokens:** walls of the simulator are made by Golden token.
+2)**Silver tokens:** Silver tokens are randomly placed in the simulator which robot has to collect.
 
 Installing and running
 ----------------------
@@ -24,13 +27,7 @@ The instruction for the three exercises can be found inside the .py files (exerc
 When done, you can run the program with:
 
 ```bash
-$ python run.py exercise1.py
-```
-
-You have also the solutions of the exercises (folder solutions)
-
-```bash
-$ python run.py solutions/exercise1_solution.py
+$ python run.py assignment.py
 ```
 
 Robot API
