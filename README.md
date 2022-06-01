@@ -242,7 +242,9 @@ def turn_method(left_dist, right_dist, dist_gold):
 		print("Left and right distances are similar, i'll go straight")
 
 def main():
+	
 	while 1:  
+			
 			#Updating variables value for every while cycle
 			dist_silver, rot_silver = find_silver_token()
 			dist_gold=find_golden_token()
