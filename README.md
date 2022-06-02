@@ -10,6 +10,9 @@ Some of the arenas and the assignment has been modified for the Research Track 1
 
 2)**Silver tokens:** Silver tokens are randomly placed in the simulator which robot has to collect.
 
+![Screenshot 2022-05-31 142304](https://user-images.githubusercontent.com/104999107/171596607-f01fd71a-2c13-4df6-bf28-a47864661a6b.png)
+
+
 
 Installing and running
 ----------------------
