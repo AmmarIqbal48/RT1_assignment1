@@ -127,7 +127,7 @@ Function **turn** is used to turn the robot in the arena, the robot turns exactl
     R.motors[0].m0.power = 0
     R.motors[0].m1.power = 0
 
-Function **find_silver_token** is used to find the silver tokens in the arena command** R.see** is used to find the closest token and (than the grab function is used to grab the silver token and put behind) we have given particular angel to R.see command so the robot can't see the tokens behind it.
+Function **find_silver_token** is used to find the silver tokens in the arena command **R.see** is used to find the closest token and (than the grab function is used to grab the silver token and put behind) we have given particular angel to R.see command so the robot can't see the tokens behind it.
 
 **def find_silver_token():**
     
