@@ -98,7 +98,10 @@ for m in markers:
 ```
 Functions Used In The Program
 ---------
-def drive(speed, seconds):
+
+Function **drive** is used to drive the robot in the arena, the speed of all the motors in the robot is kept same so the robot moves in straight line.
+
+**def drive(speed, seconds):**
     
     # Function for setting a linear velocity 
     #arguments for function are speed and seconds(time)
@@ -110,7 +113,9 @@ def drive(speed, seconds):
     R.motors[0].m0.power = 0
     R.motors[0].m1.power = 0
 
-def turn(speed, seconds):
+Function **turn** is used to turn the robot in the arena, the robot turns exactly around its axis.
+
+**def turn(speed, seconds):**
     
     #Function for setting a angular velocity 
     #arguments for function are speed and seconds(time)
@@ -122,7 +127,9 @@ def turn(speed, seconds):
     R.motors[0].m0.power = 0
     R.motors[0].m1.power = 0
 
-def find_silver_token():
+Function **find_silver_token** is used to find the silver tokens in the arena command** R.see** is used to find the closest token and (than the grab function is used to grab the silver token and put behind) we have given particular angel to R.see command so the robot can't see the tokens behind it.
+
+**def find_silver_token():**
     
     #Function to find the closest silver token
     """Returns: dist (float): distance of the closest silver token 
@@ -143,7 +150,9 @@ def find_silver_token():
     else:
    	return dist, rot_y
 
-def find_golden_token():
+Function **find_golden_token** is used to find the golden tokens in the arena, the walls of the arena are made of golden token and to avoid the collision with the walls using R.see command the robot finds the golden token and turns left or right to avoid collision we have given a particular angel so robot can't see behind it. 
+
+**def find_golden_token():**
     
     #Function to find the closest golden token
     """Returns:dist (float): distance of the closest golden token"""
@@ -161,7 +170,9 @@ def find_golden_token():
     else:
    	return dist
 
-def find_golden_token_left():
+Function **find_golden_token_left** is used to see golden token which are on the left of the robot and avoid collision with them.
+
+**def find_golden_token_left():**
     
     #Function to compute the closest golden token distace on the left of the robot.
 
@@ -176,8 +187,10 @@ def find_golden_token_left():
 	return -1 #(-1 if no golden token is detected on the left of the robot)
     else:
    	return dist
-    
-def find_golden_token_right():
+
+Function **find_golden_token_right** is used to see golden token which are on the right of the robot and avoid collision with them.
+
+**def find_golden_token_right():**
     
     #Function to compute the closest golden token distace on the right of the robot.
 
@@ -193,7 +206,9 @@ def find_golden_token_right():
     else:
    	return dist
 
-def grab_routine(rot_silver, dist_silver): 
+Function **grab_routine** is used to grab the silver token before the silver token is grabbed bt the robot the robot has to adjust its angel and postion with respect to the silver token and than grab the token.
+
+**def grab_routine(rot_silver, dist_silver):**
     
     #Function to control the routine for grabbing silver tokens    
     """Arguments for the function are :rot_silver (float):angle between the robot and silver token
@@ -219,8 +234,9 @@ def grab_routine(rot_silver, dist_silver):
 	    print("Move Right a littel...")
 	    turn(+5, 0.3)
 
+Function **turn_method** is used to turn the robot correctly in the arena there is threshold given by us that the robot comapres with the closest golden token on the right or left and depending on that throshold distance robot moves left or right.
 
-def turn_method(left_dist, right_dist, dist_gold):
+**def turn_method(left_dist, right_dist, dist_gold):**
 	
 	#Function that implements the turn decision method
 	"""Arguments for the function:left_dist (float):distance from the gloden token closest on the left of the robot
@@ -244,7 +260,9 @@ def turn_method(left_dist, right_dist, dist_gold):
 		drive(15,0.5)
 		print("Left and right distances are similar, i'll go straight")
 
-def main():
+Function **main** is the function where every other function is called the main function is kept in loop so the program runs the map infinite times.
+
+**def main():**
 	
 	while 1:  
 			
