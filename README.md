@@ -264,5 +264,6 @@ def main():
 		    		grab_routine(rot_silver, dist_silver)	
         
 
+![Flowchart](https://user-images.githubusercontent.com/104999107/171596016-13eb8ff5-cf4d-4134-b2ed-0439f11bd65e.png)
 
 [sr-api]: https://studentrobotics.org/docs/programming/sr/
