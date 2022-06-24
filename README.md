@@ -292,7 +292,7 @@ Basic stucture of the program is explained in the flow chart.
 ![Flowchart](https://user-images.githubusercontent.com/104999107/171596016-13eb8ff5-cf4d-4134-b2ed-0439f11bd65e.png)
 
 
-Future Improvements
+Conclution And Future Improvements
 ---------
 The robot changes direction when it faces a wall (golden tokens). So when robot is moving in the simulator and putting Silver token behind itself there could be condition when the robot places a token which is very closed to the wall and this will stop robot from collecting the Silver token because the Silver token would be in the threshold we have given to the robot so it dosen't collide with the wall.
 
